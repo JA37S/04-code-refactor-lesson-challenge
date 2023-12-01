@@ -16,6 +16,7 @@ h3 {
 
 img {
   display: block;
+  /* Ensure the images don't have any space below them (common with inline-block elements) */
 }
 
 header {
@@ -33,9 +34,28 @@ header {
   height: 600px;
   margin: 20px auto;
   border: 15px solid black;
+  /* Add position relative here if it's not already inherited from body */
+  position: relative;
 }
 
 .absolute-container {
   position: relative;
+  /* No changes needed here */
 }
 
+/* Positioning for #relative-box-2 */
+#relative-box-2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Adjustments made to center the box within its container */
+}
+
+/* Positioning for #absolute-box-2 */
+#absolute-box-2 {
+  position: absolute;
+  right: -100%; /* Move it right outside the container */
+  top: -100%; /* Move it up outside the container */
+  /* Adjustments made to position the box outside the upper right corner of its container */
+}

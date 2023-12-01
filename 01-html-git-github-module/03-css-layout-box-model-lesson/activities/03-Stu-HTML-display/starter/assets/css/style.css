@@ -13,6 +13,7 @@ ul {
 }
 
 li {
+  display: inline; /* Added display: inline; to display list items inline */
   list-style-type: none;
   font-size: 40px;
 }
@@ -21,18 +22,25 @@ img {
   margin: 0 auto;
 }
 
-#item-1 {
+.nav-item-1 {
   background-color: #e0115f;
 }
 
-#item-2 {
+.nav-item-2 {
   background-color: #0000ff;
 }
 
-#item-3 {
+.nav-item-3 {
   background-color: #999900;
 }
 
-#image-3 {
-  display: none;
+.third-image {
+  display: block;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
